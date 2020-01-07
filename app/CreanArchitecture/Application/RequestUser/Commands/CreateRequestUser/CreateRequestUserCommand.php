@@ -1,19 +1,20 @@
 <?php
 
-namespace App\CreanArchitecture\Application\RequestUser\Commands;
+namespace App\CreanArchitecture\Application\RequestUser\Commands\CreateRequestUser;
 
 
-use App\CreanArchitecture\Application\RequestUser\Commands\CreateRequestUser\RequestUserInfo;
+use App\CreanArchitecture\Application\RequestUser\Commands\CreateRequestUser\RequestUserInfoModel;
 
-class CreateRequestUserCommand
+class CreateRequestUserCommand implements ICreateRequestUserCommand
 {
     public function __construct()
     {
     }
 
-    public function execute(RequestUserInfo $model)
+    public function execute(RequestUserInfoModel $model):void
     {
         // TODO $modelからDomainを生成
+
 
         // TODO FactoryでUserDomainを作成
         $requestUser = $this->requestUserFactory->create(

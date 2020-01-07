@@ -4,7 +4,7 @@
 namespace App\CreanArchitecture\Application\RequestUser\Commands\CreateRequestUser;
 
 
-class RequestUserInfo
+class RequestUserInfoModel
 {
     public string $supplierName;
     public string $email;
